@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <!-- partial:index.partial.html -->
+<head>
+  <meta charset="UTF-8">
+  <title>Home page</title>
+  <meta name="viewpoint" content="width=device-width, initial-scale=1.0"-->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+/>
+<!-- Google Fonts Roboto -->
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+/>
+<!-- MDB -->
+<link rel="stylesheet" href="css/mdb.min.css"><link rel="stylesheet" href="css/main.css">
+<!-- Background image -->
+<div style="background-image: url('/css/background-image');"></div>
+  
+
+</head>
+<br>
+<body onload="date()" style="background-image: url('img/Black_Background.jpg');">
+
+ 
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light" >
+  <!-- Container wrapper -->
+  <div class="container-fluid">
+    <!-- Toggle button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+    
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Navbar brand -->
+      <a class="navbar-brand" href="#!"><span style="color: #5e9693;">Task </span><span style="color:blue;">  Manager</span></a>
+      <!-- Left links -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" onclick="goHomePage()" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="goSchedulePage()"  >Schedule</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="goCalenderPage()" >Calender</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="goMealPlanPage()">Meal Plan</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="goNotesPage()">Notes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="goExercisePage()">Excercise</a>
+        </li>
+        
+        
+      
+      </ul>
+      <!-- Left links -->
+    </div>
+    <!-- Collapsible wrapper -->
+    
+
+    <!-- Right elements -->
+        <div class="row ">
+        <div id="current_date"></div>
+        <div id="current_time"></div>
+         <div class="row logo justify-content-center "></div>
+      </div> 
+    <div id="current_date"></div>
+      <div id="current_time"></div>
+
+      <!-- Notifications -->
+      <div class="dropdown">
+        <a
+          class="text-reset me-3 dropdown-toggle hidden-arrow"
+          href="#"
+          id="navbarDropdownMenuLink"
+          role="button"
+          data-mdb-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <i class="fas fa-bell"></i>
+          <span class="badge rounded-pill badge-notification bg-danger">1</span>
+        </a>
+        <ul
+          class="dropdown-menu dropdown-menu-end"
+          aria-labelledby="navbarDropdownMenuLink"
+        >
+          <li>
+            <a class="dropdown-item" href="#">Homework due!!</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">study time</a>
+          </li>
+        
+        </ul>
+      </div>
+      <!-- Avatar -->
+      <div class="dropdown">
+        <a
+          class="dropdown-toggle d-flex align-items-center hidden-arrow"
+          href="#"
+          id="navbarDropdownMenuAvatar"
+          role="button"
+          data-mdb-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <img
+            src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+            class="rounded-circle"
+            height="25"
+            alt="Black and White Portrait of a Man"
+            loading="lazy"
+          />
+        </a>
+        <ul
+          class="dropdown-menu dropdown-menu-end"
+          aria-labelledby="navbarDropdownMenuAvatar"
+        >
+          <li>
+            <a class="dropdown-item" href="#">My profile</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#" onclick="goSettingsPage()">Settings</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#" onclick="logout()" class="right">logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
+  <div class="container-lg">
+    <div onload="schedule()" class="tasks">
+
+      <div id="addTask" class="add">
+        <h1 style="color: #ffd700;">My Schedule</h1>
+        <input type="text" id="myInput" placeholder="New Task">
+        <input type="text" id="myInput" placeholder="Start date">
+        <input type="text" id="myInput" placeholder="Expected completion">
+        <br><br><br>
+        <button type="submit" class="btn btn-primary btn-block" ><span onclick="newElement()" class="addBtn">Add</span></button>
+      </div>
+  
+      <ul style="color: #ffd700;" id="tl">
+        <li>Find Jake </li>
+        <li>Study Mechanics</li>
+        <li>Finish asos</li>
+        <li>Update notes in the notes pages</li>
+      </ul>
+  
+    
+      <button type="submit" class="btn btn-primary btn-block" onclick="history.back()">Go Back</button>
+
+    </div>
+  </div>
+ 
+</div>
+<div class="calendar" id="calendar-8"></div>
+
+  </main>
+
+   <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+    <script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+  <script  defer src="js/web.js"></script>
+</body>
+
+<footer>
+  
+    
+</footer>
+</html>

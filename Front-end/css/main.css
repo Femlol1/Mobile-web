@@ -1,0 +1,44 @@
+.tasks {
+	height: 800px;
+	width: 1000px;
+	left: 300px;
+	position: fixed;
+	border-radius: 10px;
+	float: left;
+	box-sizing: border-box;
+}
+
+.addTask {
+	text-align:center;
+	font-family:Eras ITC;
+	font-size: 30px;
+	top: 500px;
+	color:GhostWhite;
+	float: center;
+}
+
+li.checked {
+	text-decoration: line-through;
+	opacity: 0.6;
+	color: #bebebe;
+  }
+  
+li.checked::before {
+	content: '';
+	position: absolute;
+	border-color: #bebebe;
+	border-style: solid;
+	border-width: 0 2px 2px 0;
+	top: 10px;
+	left: 16px;
+	transform: rotate(45deg);
+	height: 15px;
+	width: 7px;
+  }
+  
+
+
+  
+  
+  
+ 

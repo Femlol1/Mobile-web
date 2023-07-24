@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>sign up page</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Rubik:400,700'><link rel="stylesheet" href="css/index.css">
+
+</head>
+<body style="background-image: url('img/Black_Background.jpg');">
+<!-- partial:index.partial.html -->
+<div class="login-form">
+  <form action="/signup" method="post">
+    <h1 class="navbar-brand" href="#!"><span style="color: #5e9693;">iGSE </span><span style="color:blue;">Energy</span></h1>
+    <h1>Sign Up</h1>
+    <div class="content">
+      <div class="input-field">
+        <input type="email" id= email placeholder="Email" name="email" autocomplete="nope">
+      </div>
+      <div class="input-field">
+        <input type="username" placeholder="Username" autocomplete="nope">
+      </div>
+      <div class="input-field">
+        <input type="password" placeholder="Password" name="password"autocomplete="new-password">
+      </div>
+      <div class="input-field">
+        <input type="password" placeholder="Re-enter Password" autocomplete="renew-password">
+      </div>
+      <div class="input-field">
+        <input type="address" placeholder="Address" autocomplete="address-line1">
+      </div>
+      <div class="input-field">
+        <input type="property-type" placeholder="Property type" autocomplete="address-line1">
+      </div>
+      <div class="input-field">
+        <input type="num-of-bedrooms" placeholder="Number of Bedrooms" autocomplete="address-line1">
+      </div>
+      
+    <div class="action"> <!--might need to change to submit-->
+      <button type="button"  id="submit" onclick="history.back()">Back</button>
+      <input type="submit"  id="submit" onclick="sign_up()">Sign up</input>
+    </div>
+  </form>
+</div>
+<!-- partial -->
+  <script  src="js/web.js"></script>
+
+</body>
+
+</html>

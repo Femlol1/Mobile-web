@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>login page </title>
+    <!-- MDB icon -->
+    <link rel="icon" href="" type="image/x-icon" />
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Rubik:400,700'><link rel="stylesheet" href="css/index.css">
+  
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <!--link rel="stylesheet" href="css/mdb.min.css" /-->
+  </head>
+  <body style="background-image: url('img/Black_Background.jpg');">
+    <!-- Start your project here-->
+    <div type="querySelecter"class="login-form">
+      <form action="/login" method="post">
+        <h1 class="navbar-brand" href="#!"><span style="color: #5e9693;">Task </span><span style="color:blue;">Manager</span></h1>
+
+        <h1>Login</h1>
+        <div class="content">
+          <div class="input-field">
+            <input type="email" placeholder="Email" id="lEmail" name="email" autocomplete="nope">
+          </div>
+          <div class="input-field">
+            <input type="password" placeholder="Password" id="lPassword" name="password" autocomplete="new-password">
+          </div>
+          <div class="row mb-4">
+            <div class="col d-flex justify-content-center">
+              <!-- Checkbox -->
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="form1Example3" checked />
+                <label class="form-check-label" for="form1Example3"> Remember me </label>
+              </div>
+
+              
+            </div>
+            <br>
+
+
+        
+          <a href="/signup">Sign Up</a>
+          <a href="#" class="link" onclick="goForgotPassword()">Forgot Your Password?</a>
+        </div>
+        <br>
+        <div class="submit">
+         <!--  <button type="button"  id="goSignUp" onclick="goToSignUp()">Sign up</button>id="login" onclick="autohorise()"-->
+         <input type="submit"></input> 
+        </div>
+      </form>
+    </div>
+    <!-- End your project here-->
+
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+
+  <script  defer src="js/web.js"></script>
+  </body>
+</html>
